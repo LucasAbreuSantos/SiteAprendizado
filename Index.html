@@ -98,6 +98,7 @@
         Listas 
         Tag "ol" Listas ordenadas onde a ordem importa com Parametros possiveis 1,A,a,I,i (1 Parametro Padrao)
         Tag "ul" Lista nao ordenada onde a ordem não importa com parametros: Disc,Circle,Square (Disc por padrão)
+        Tag "dt" Lista de Definições, explicação do termo. (Util para os buscadores)
     -->
     <h2>Listas</h2>
     <h3>Lista Ordenada</h3>
@@ -122,7 +123,7 @@
         <li>Item 2</li>
         <ol>
             <li>Item 2.1</li>
-            <ul>
+            <ul type="Circle">
                 <li>Item 2.1.1</li>
                 <li>Item 2.1.2</li>
             </ul>
@@ -130,5 +131,14 @@
         </ol>
         <li>Item 3</li>
     </ol>
+    <h2>Lista de Definições</h2>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Linguagem de Marcação para a criação do Conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de Marcação para a criação do Design de um site.</dd>
+        <dt>Javascript</dt>
+        <dd>Linguagem de Marcação para a criação de Interatividade de um site.</dd>
+    </dl>
 </body>
 </html>
