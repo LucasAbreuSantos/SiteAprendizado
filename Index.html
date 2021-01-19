@@ -173,5 +173,34 @@
         <source media="(max-width: 1050px)" srcset="Imagens/foto-m.png" type="image/png"> 
         <img src="Imagens/foto-g.png" alt="Foto Flexivel">
      </picture>
+     <!--
+         Reprodução de Aúdio em Html5
+         Tag: Audio, utilizada para reproduzir musicas no site.
+         parametro Preload = auto, metadata e none (Auto = Carrega todo o audio antes de terminar de carregar o site, 
+         Metadata somente carrega as informações do audio, baixando ele apos dar o play, e none não carrega nada antes de rodar)
+         conforme o exemplo da imagem tambem é possivel usar o source para que ao não conseguir reproduzir um formato tente outro.
+      -->
+     <h1>Reproduzindo aúdio</h1>
+     <p>Vamos reproduzir aúdio em Html5</p>
+     <audio preload="metadata" controls autoplay loop>
+         <source src="Midia/Just Dance - Patrick Patrikios.mp3" type="audio/mpeg">
+         <source src="Midia/Just Dance - Patrick Patrikios.ogg" type="audio/ogg">
+         <source src="Midia/Just Dance - Patrick Patrikios.wav" type="audio/wav">
+         <p>
+             Infelizmente o seu navegador não consegue reproduzir aúdio.
+             Baixe o <a href="Midia/Just Dance - Patrick Patrikios.mp3" download="Just Dance - Patrick Patrikios.mp3" type="audio/mpeg">audio aqui!</a>
+         </p>     
+     </audio>
+     
+     <h1>Inserindo Videos Hospedados Localmente</h1>
+     <p>Este video esta hospedado no proprio servidor.</p>
+     <video controls width="500px" poster="Imagens/FaceBook.png">
+         <source src="Midia/PexelsVideos1.mp4" type="video/mp4">
+          <p>
+              Este navegador não tem compatibilidade com videos MP4! <br>
+              <a href="Midia/PexelsVideos1.mp4" download="PexelsVideos1.mp4" type="video/mp4">Faça o Download aqui!</a>
+          </p>  
+     </video>
+
 </body>
 </html>
