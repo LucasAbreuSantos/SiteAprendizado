@@ -142,6 +142,9 @@
     </dl>
     <!-- 
         Links
+        href  : Local podendo ser uma pagina externa ou interna
+        rel   : "External" para links externos, "next" para proxima intena, "prev" para anterior interna
+        target: "_blank" Abrir página em outra aba. 
     -->
     <h1>Usando Links</h1>
     <p>
@@ -151,5 +154,11 @@
         Esta é a primeira Pagina do site. Se você quiser pode
         acessar a <a href="pag002.html" rel="next">segunda Pagina</a>
     </p>
+    
+    <h1>Links para Download</h1>
+    <ul>
+        <li><a href="livro/livro.pdf" download="livro.pdf" type="application/pdf" target="_blank">Baixar o livro em PDF</a></li>
+        <li><a href="livro/livro.zip" download="livro.zip" type="application/pdf">Baixar livro compactado em ZIP</a></li>
+    </ul>
 </body>
 </html>
