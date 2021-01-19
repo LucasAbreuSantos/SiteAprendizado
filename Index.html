@@ -176,9 +176,11 @@
      <!--
          Reprodução de Aúdio em Html5
          Tag: Audio, utilizada para reproduzir musicas no site.
-         parametro Preload = auto, metadata e none (Auto = Carrega todo o audio antes de terminar de carregar o site, 
+         Parametro Preload = auto, metadata e none (Auto = Carrega todo o audio antes de terminar de carregar o site, 
          Metadata somente carrega as informações do audio, baixando ele apos dar o play, e none não carrega nada antes de rodar)
          conforme o exemplo da imagem tambem é possivel usar o source para que ao não conseguir reproduzir um formato tente outro.
+         Autoplay ativa automaticamente após fazer uma interação com a página.
+         Loop significa que vai entrar em loop ao acabar inicia novamente.                 
       -->
      <h1>Reproduzindo aúdio</h1>
      <p>Vamos reproduzir aúdio em Html5</p>
@@ -191,16 +193,38 @@
              Baixe o <a href="Midia/Just Dance - Patrick Patrikios.mp3" download="Just Dance - Patrick Patrikios.mp3" type="audio/mpeg">audio aqui!</a>
          </p>     
      </audio>
-     
+     <!-- 
+         Adicionando Video em Html5 (Esta forma colocando o video hospedado no próprio site
+         não é a mais adqueda por utilizar muita banda de download pois cada acesso ira realizar
+         o consumo de download do video e existe um valor cobrado para isso na hospedagem do site.)
+
+         Tag Video, utilizada para reproduzir video no site.
+         Parametro Controls (Habilita os controles), Poster adiciona uma imagem como Poster do video
+         Source adiciona uma opção ao navegador, caso seja adicionado mais sources mais opções estarão
+         disponiveis e um paragrafo foi adicionado para caso nenhum source seja valido.
+
+     -->
      <h1>Inserindo Videos Hospedados Localmente</h1>
      <p>Este video esta hospedado no proprio servidor.</p>
-     <video controls width="500px" poster="Imagens/FaceBook.png">
+     <video controls width="560px" poster="Imagens/FaceBook.png">
          <source src="Midia/PexelsVideos1.mp4" type="video/mp4">
           <p>
               Este navegador não tem compatibilidade com videos MP4! <br>
               <a href="Midia/PexelsVideos1.mp4" download="PexelsVideos1.mp4" type="video/mp4">Faça o Download aqui!</a>
           </p>  
      </video>
+
+     <!-- 
+         Utilizando video do Youtube/Vimeo etc.. que hospeda o video diferente da opção anterior onde quem
+        hospeda é o próprio site.
+     -->
+     <h1>Inserindo Videos Hospedados no Youtube</h1>
+     <p>Este video esta hospedado no Youtube!</p>
+     
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y" frameborder="0"
+             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     
+     <p>De uma olhada no Curso de Html5 do <a href="https://www.youtube.com/watch?v=3hng-hmSv2Y&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=1">Guanabara</a>! </p>
 
 </body>
 </html>
