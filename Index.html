@@ -162,5 +162,16 @@
         <li><a href="livro/livro.pdf" download="livro.pdf" type="application/pdf" target="_blank">Baixar o livro em PDF</a></li>
         <li><a href="livro/livro.zip" download="livro.zip" type="application/pdf">Baixar livro compactado em ZIP</a></li>
     </ul>
+    <!-- 
+        Midias em Html5
+        Tag Picture: Trabalhar com imagens de tamanhos diferentes para dispositivos diferentes
+        Tag Source:  Seleciona a imagem para o Max-width ou Min-width sendo a imagem padrao a da tag "Img".
+     -->
+     <h1>Midias em Html5</h1>
+     <picture>
+        <source media="(max-width: 750px)" srcset="Imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/foto-m.png" type="image/png"> 
+        <img src="Imagens/foto-g.png" alt="Foto Flexivel">
+     </picture>
 </body>
 </html>
